@@ -18,7 +18,6 @@ object Application {
 class HelloController {
 
     @Get
-    @Produces(MediaType.TEXT_HTML)
     fun getName(@QueryValue name: String): String {
         return "Hello, $name"
     }
